@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link  rel="stylesheet" href="./css/stylesheet.css">
+    
+</head>
+<body>
+    <div class="main-content">
+    {{>header}}   
+    <p>Use this Website to check the Weather</p>
+    </div>
+     <div id="cover">
+  <form method="get" action="">
+    <div class="tb">
+      <div class="td"><input type="text" placeholder="Location" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<p id='message-1'></p>
+<p id='message-2'></p>
+{{!-- <h1>My Web Server title is {{title}}</h1> --}}
+{{!-- <p>Created By {{name}}</p> --}}
+{{!-- <img src="./img/ankit.jpg"> --}}
+{{>footer}}
+<script src="./javascript/myapp.js"></script>
+</body>
+
+
+
+
+
+
+</html>
