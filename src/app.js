@@ -4,6 +4,7 @@ const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const tempo=require('./utils/temp')
 const app=express()
+const port=process.env.PORT || 3000
 // console.log(__dirname)
 // console.log(__filename)
 /// Define Paths for Express config
@@ -82,6 +83,6 @@ app.get('*',(req,res)=>{
     res.render('404')
 }
 )
-app.listen(3000,()=>{
-    console.log('Server is up and running at 3000')
+app.listen(port,()=>{
+    console.log('Server is up and running at '+port)
 })
