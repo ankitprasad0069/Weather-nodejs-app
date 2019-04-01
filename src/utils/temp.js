@@ -10,7 +10,7 @@ const weather=(latitude,longitude,callback)=>{
             callback('Unable to find Temperature. Search Again.',undefined)
         }
         else{
-           callback(undefined,response.body.hourly.summary+'. The temperature is '+response.body.currently.temperature+' and precipProbability is '+response.body.currently.precipProbability+'%.')
+           callback(undefined,response.body.hourly.summary+'. The temperature is '+response.body.currently.temperature+'.C '+ 'and precipProbability is '+response.body.currently.precipProbability+'%.'+'and visibilty is '+response.body.currently.visibility)
 
         }
     })
